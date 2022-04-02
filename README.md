@@ -10,7 +10,7 @@ git clone https://github.com/GinkgoGumbo/random-scp
 
 Download dependencies:
 ```
-  pip install -r requirements.txt
+pip install -r requirements.txt
 ```
 
 Run:
