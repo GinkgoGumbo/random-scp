@@ -1,4 +1,19 @@
 # random-scp
 Random SCP article downloader with questionable TXT support
 
-Download dependencies with pip install -r requirements.txt
+## Instructions:
+
+Clone repository:
+```
+git clone https://github.com/GinkgoGumbo/random-scp
+```
+
+Download dependencies:
+```
+  pip install -r requirements.txt
+```
+
+Run:
+python3 random-scp.py
+
+All files stored in "scp" folder in current directory.
