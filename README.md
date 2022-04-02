@@ -14,6 +14,8 @@ pip install -r requirements.txt
 ```
 
 Run:
+```
 python3 random-scp.py
+```
 
-All files stored in "scp" folder in current directory.
+All files are stored in a directory called 'scp' in the current directory.
