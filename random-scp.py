@@ -52,12 +52,12 @@ def download_article(art_url, art_title):
         os.makedirs('scp')
     os.chdir('scp')
     # Write files
-    with open('{}.html'.format(art_title.lower()), 'w') as file:
+    with open('{}.html'.format(art_title.lower()), 'w', encoding='UTF-8') as file:
         try:
             file.write(art_content)
         except:
             print("HTML download failed.")
-    with open('{}.txt'.format(art_title.lower()), 'w') as file:
+    with open('{}.txt'.format(art_title.lower()), 'w', encoding='UTF-8') as file:
         soup = BeautifulSoup(art_content, 'html.parser').get_text('\n')
         art_start = soup.find('rating:')
         try:
@@ -70,6 +70,7 @@ def download_article(art_url, art_title):
         if repeat.lower() == 'y':
             main()
         elif repeat.lower() == 'n':
+            print("Done.")
             return 0
         else:
             print('Invalid input.')
