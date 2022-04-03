@@ -69,7 +69,7 @@ def find_link(randhtml):
 
 # Uses previous artID to fill in URL
 def display_article_info(artID, art_title):
-    print('\n\n\nRandom Article:', art_title)
+    print('\n\nRandom Article:', art_title)
     art_url = 'https://scp-wiki.wikidot.com/{}'.format(artID)
     print('URL:', art_url)
     return art_url
