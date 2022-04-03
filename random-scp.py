@@ -68,6 +68,7 @@ def download_article(art_url, art_title):
     try:
         repeat = input("Want another article? (y/n): ")
         if repeat.lower() == 'y':
+            os.chdir('..')
             main()
         elif repeat.lower() == 'n':
             print("Done.")
